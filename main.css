@@ -1,0 +1,33 @@
+.submissionContainer{
+    text-align: center;
+    background-color: gray;
+    border-radius: 20px;
+    width: 30%;
+    margin-top: 100px;
+    margin-left: 35%;
+    padding: 20px;
+}
+
+.submissionContainer button{
+    margin: 5px;
+}
+
+.paragraph-styling {
+    margin: 0;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#listContainer {
+    width: 30%;
+    margin-left: 35%;
+}
+
+.button-styling {
+    display: inline-block;
+}
+
+#submission {
+    width: 300px;
+    height: 30px;
+}
