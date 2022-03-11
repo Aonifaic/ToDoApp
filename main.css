@@ -20,11 +20,18 @@
 
 #listContainer {
     width: 30%;
+    margin-top: 10px;
     margin-left: 35%;
+    display: inline-block;
+}
+
+.toDo-styling {
+    display: flex;
 }
 
 .button-styling {
-    display: inline-block;
+    font-weight: bold;
+    margin-left: 3px;
 }
 
 #submission {

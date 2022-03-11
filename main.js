@@ -4,6 +4,12 @@ let listContainer = document.getElementById("listContainer");
 let submission = document.getElementById("submission");
 
 addToDoButton.addEventListener("click", function() {
+    //create a div element
+    var toDoContainer = document.createElement("div");
+
+    //add styling to div
+    toDoContainer.classList.add("toDo-styling");
+    
     //create a paragraph element
     var item = document.createElement("p");
     
@@ -23,10 +29,13 @@ addToDoButton.addEventListener("click", function() {
     deleteButton.innerText = "X";
 
     //place the item into the container
-    listContainer.appendChild(item);
+    toDoContainer.appendChild(item);
 
     //place the deleteButton into the container
-    listContainer.appendChild(deleteButton);
+    toDoContainer.appendChild(deleteButton);
+
+    //place the toDoContainer into the list container
+    listContainer.appendChild(toDoContainer);
 
     //remove text in box after submission
     submission.value = "";
@@ -38,7 +47,8 @@ addToDoButton.addEventListener("click", function() {
 
     //add listener for deleteButton
     deleteButton.addEventListener("click", function() {
-        listContainer.removeChild(item);
-        listContainer.removeChild(deleteButton);
+        toDoContainer.removeChild(item);
+        toDoContainer.removeChild(deleteButton);
+        listContainer.removeChild(toDoContainer);
     })
 })
